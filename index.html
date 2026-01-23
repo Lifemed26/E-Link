@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <title>Acessos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
+      margin: 0;
+      min-height: 100vh;
       font-family: Arial, sans-serif;
       text-align: center;
-      min-height: 100vh;
 
       background-image: url("imagens/fundo.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
 
-      /* CENTRALIZAÇÃO PERFEITA */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,10 +28,11 @@
 
     a {
       display: block;
-      margin: 20px auto;
-      padding: 15px;
+      margin: 16px auto;
+      padding: 16px;
       width: 80%;
-      max-width: 300px;
+      max-width: 320px;
+
       text-decoration: none;
       color: white;
       background: purple;
@@ -38,20 +40,18 @@
       font-size: 18px;
     }
 
-    /* 📱 AJUSTE SOMENTE PARA CELULAR */
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       a {
-        margin: 15px auto;
-        padding: 18px; /* botão mais confortável ao toque */
-        font-size: 17px;
+        width: 90%;
+        padding: 18px;
       }
     }
   </style>
 </head>
+
 <body>
 
   <div class="botoes">
-
     <a href="https://youtube.com/playlist?list=PLFVHSIzO5Qo5TrQ4qPEP7QVz3BTioHMBF&si=GGuG4u6v6BX1SBsi">
       Treinamento E-Link
     </a>
@@ -59,7 +59,6 @@
     <a href="https://drive.google.com/file/d/16c-Lm4ZOf5Qt1afhz4liDXgZ2FDT0ly-/view?usp=sharing">
       Manual E-Link
     </a>
-
   </div>
 
 </body>
