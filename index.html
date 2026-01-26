@@ -15,7 +15,7 @@
       background-position: center;
       background-repeat: no-repeat;
 
-      /* CENTRALIZAÇÃO PERFEITA */
+      /* CENTRALIZAÇÃO */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -23,6 +23,7 @@
 
     .botoes {
       width: 100%;
+      transform: translateY(-60px); /* 🔼 SOBE OS BOTÕES */
     }
 
     a {
@@ -38,12 +39,16 @@
       font-size: 18px;
     }
 
-    /* 📱 AJUSTE SOMENTE PARA CELULAR */
+    /* 📱 AJUSTE PARA CELULAR */
     @media (max-width: 500px) {
       a {
         margin: 15px auto;
-        padding: 18px; /* botão mais confortável ao toque */
+        padding: 18px;
         font-size: 17px;
+      }
+
+      .botoes {
+        transform: translateY(-40px); /* ajuste específico mobile */
       }
     }
   </style>
