@@ -10,6 +10,80 @@
       margin: 0;
       padding: 0;
       height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+
+      /* FUNDO SIMPLES */
+      background-color: #654099;
+      background-image: url("imagens/fundo.jpg");
+      background-size: contain;   /* garante que a imagem apareça */
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .botoes {
+      width: 100%;
+      transform: translateY(-40px);
+    }
+
+    a {
+      display: block;
+      margin: 20px auto;
+      padding: 15px;
+      width: 80%;
+      max-width: 300px;
+      text-decoration: none;
+      color: white;
+      background: #654099;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 500px) {
+      .botoes {
+        transform: translateY(-20px);
+      }
+
+      a {
+        font-size: 17px;
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="botoes">
+    <a href="https://youtube.com/playlist?list=PLFVHSIzO5Qo5TrQ4qPEP7QVz3BTioHMBF&si=GGuG4u6v6BX1SBsi">
+      Treinamento E-Link
+    </a>
+
+    <a href="https://drive.google.com/file/d/16c-Lm4ZOf5Qt1afhz4liDXgZ2FDT0ly-/view?usp=sharing">
+      Manual E-Link
+    </a>
+  </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Acessos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       overflow: hidden;
     }
 
@@ -83,3 +157,4 @@
 
 </body>
 </html>
+
