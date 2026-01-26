@@ -17,21 +17,20 @@
       font-family: Arial, sans-serif;
       text-align: center;
 
-      /* FUNDO EM DUAS CORES + IMAGEM */
+      /* IMAGEM PRIMEIRO + GRADIENTE TRANSPARENTE POR CIMA */
       background:
+        url("imagens/fundo.jpg"),
         linear-gradient(
           to bottom,
-          #654099 0%,
-          #654099 50%,
-          #4B2E6F 50%,
-          #4B2E6F 100%
-        ),
-        url("imagens/fundo.jpg");
+          rgba(101, 64, 153, 0.85) 0%,
+          rgba(101, 64, 153, 0.85) 50%,
+          rgba(75, 46, 111, 0.85) 50%,
+          rgba(75, 46, 111, 0.85) 100%
+        );
 
-      background-size: 100% 100%, 90%;
-      background-position: center center, center center;
+      background-size: 90%, 100% 100%;
+      background-position: center, center;
       background-repeat: no-repeat, no-repeat;
-      /* ❌ REMOVIDO background-attachment: fixed */
 
       display: flex;
       justify-content: center;
